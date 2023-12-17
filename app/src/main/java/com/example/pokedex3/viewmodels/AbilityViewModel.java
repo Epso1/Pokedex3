@@ -1,8 +1,12 @@
-package com.example.pokedex3;
+package com.example.pokedex3.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+
+import com.example.pokedex3.repositories.AbilityRepository;
+import com.example.pokedex3.adapters.AbilityAdapter;
+import com.example.pokedex3.models.Ability;
 
 import java.util.List;
 

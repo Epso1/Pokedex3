@@ -1,15 +1,16 @@
-package com.example.pokedex3;
+package com.example.pokedex3.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.pokedex3.adapters.PokemonAdapter;
+import com.example.pokedex3.viewmodels.PokemonViewModel;
+import com.example.pokedex3.R;
 
 public class MainActivity extends AppCompatActivity {
 

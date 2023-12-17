@@ -1,4 +1,4 @@
-package com.example.pokedex3;
+package com.example.pokedex3.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;

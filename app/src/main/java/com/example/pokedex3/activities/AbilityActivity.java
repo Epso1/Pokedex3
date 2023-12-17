@@ -1,14 +1,16 @@
-package com.example.pokedex3;
+package com.example.pokedex3.activities;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.pokedex3.adapters.AbilityAdapter;
+import com.example.pokedex3.viewmodels.AbilityViewModel;
+import com.example.pokedex3.R;
 
 public class AbilityActivity extends AppCompatActivity {
 

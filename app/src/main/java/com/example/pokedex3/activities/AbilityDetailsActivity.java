@@ -1,14 +1,14 @@
-package com.example.pokedex3;
+package com.example.pokedex3.activities;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bumptech.glide.Glide;
+import com.example.pokedex3.models.Ability;
+import com.example.pokedex3.R;
 
 public class AbilityDetailsActivity extends AppCompatActivity {
     private static final String EXTRA_ITEM = "com.example.item_prueba2.item";

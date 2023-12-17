@@ -1,4 +1,4 @@
-package com.example.pokedex3;
+package com.example.pokedex3.adapters;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -8,6 +8,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.pokedex3.R;
+import com.example.pokedex3.activities.AbilityDetailsActivity;
+import com.example.pokedex3.models.Ability;
 
 import java.util.List;
 

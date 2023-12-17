@@ -1,11 +1,13 @@
-package com.example.pokedex3;
+package com.example.pokedex3.viewmodels;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import java.util.Collections;
-import java.util.Comparator;
+import com.example.pokedex3.repositories.PokemonRepository;
+import com.example.pokedex3.adapters.PokemonAdapter;
+import com.example.pokedex3.models.Pokemon;
+
 import java.util.List;
 
 public class PokemonViewModel extends ViewModel {

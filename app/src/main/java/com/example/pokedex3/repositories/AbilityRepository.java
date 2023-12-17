@@ -1,6 +1,8 @@
-package com.example.pokedex3;
+package com.example.pokedex3.repositories;
 
 import android.util.Log;
+
+import com.example.pokedex3.models.Ability;
 
 import org.json.JSONArray;
 import org.json.JSONException;

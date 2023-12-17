@@ -1,4 +1,4 @@
-package com.example.pokedex3;
+package com.example.pokedex3.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pokedex3.R;
 
 public class MenuActivity extends AppCompatActivity {
     private ImageView logoImageView;

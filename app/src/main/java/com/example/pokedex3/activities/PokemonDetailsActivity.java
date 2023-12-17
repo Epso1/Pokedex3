@@ -1,4 +1,4 @@
-package com.example.pokedex3;
+package com.example.pokedex3.activities;
 
 
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.pokedex3.models.Pokemon;
+import com.example.pokedex3.R;
 
 public class PokemonDetailsActivity extends AppCompatActivity {
 
