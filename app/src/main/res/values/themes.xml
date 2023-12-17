@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Pokedex3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/pokemon_dark_blue</item>
+        <item name="colorPrimaryVariant">@color/pokemon_light_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/pokemon_light_red</item>
+        <item name="colorSecondaryVariant">@color/pokemon_light_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+    </style>
+
+    <style name="Theme.Pokedex3" parent="Base.Theme.Pokedex3" />
+</resources>

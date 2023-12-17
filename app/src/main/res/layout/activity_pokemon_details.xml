@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_amber"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/pokemonImageView"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <TextView
+            android:id="@+id/pokemonNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="NAME"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonImageView" />
+
+
+        <TextView
+            android:id="@+id/pokemonHeightTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Height"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/pokemonNameTextView"
+            app:layout_constraintBottom_toTopOf="@id/pokemonHeightTextView"
+            app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toStartOf="@id/pokemonWeightTextViewLabel"
+            />
+
+        <TextView
+            android:id="@+id/pokemonHeightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="HEIGHT"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonColorTextViewLabel"
+            app:layout_constraintEnd_toEndOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintStart_toStartOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintTop_toBottomOf="@id/pokemonHeightTextViewLabel" />
+
+
+        <TextView
+            android:id="@+id/pokemonWeightTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Weight"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintBottom_toBottomOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintStart_toEndOf="@id/pokemonHeightTextViewLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/pokemonWeightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="WEIGHT"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonColorTextViewLabel"
+            app:layout_constraintEnd_toEndOf="@id/pokemonWeightTextViewLabel"
+            app:layout_constraintStart_toStartOf="@id/pokemonWeightTextViewLabel"
+            app:layout_constraintTop_toBottomOf="@id/pokemonWeightTextViewLabel" />
+
+        <TextView
+            android:id="@+id/pokemonColorTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Color"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/pokemonColorTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonHeightTextView"
+            />
+
+        <TextView
+            android:id="@+id/pokemonColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="COLOR"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonAbilitiesTextViewLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonColorTextViewLabel" />
+
+
+        <TextView
+            android:id="@+id/pokemonAbilitiesTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Abilities:"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/pokemonAbilitiesTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonColorTextView" />
+
+        <TextView
+            android:id="@+id/pokemonAbilitiesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="ABILITIES"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/pokemonDescriptionTextViewLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonAbilitiesTextViewLabel" />
+
+        <TextView
+            android:id="@+id/pokemonDescriptionTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Description:"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/pokemonDescriptionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonAbilitiesTextView" />
+
+
+        <TextView
+            android:id="@+id/pokemonDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="DESCRIPTION"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pokemonDescriptionTextViewLabel" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_amber"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/abilityNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="NAME"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/abilityEffectTextView"/>
+
+        <TextView
+            android:id="@+id/abilityEffectTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Effect"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/abilityNameTextView"
+            app:layout_constraintBottom_toTopOf="@id/abilityEffectTextView"
+            />
+
+        <TextView
+            android:id="@+id/abilityEffectTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="EFFECT"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/abilityEffectTextViewLabel"
+            app:layout_constraintBottom_toTopOf="@id/pokemonNamesTextViewLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/pokemonNamesTextViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Pokémon Names"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/abilityEffectTextView"
+            app:layout_constraintBottom_toTopOf="@id/pokemonNamesTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/pokemonNamesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="350dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="NAMES"
+            android:textAlignment="center"
+            android:textColor="@color/pokemon_dark_blue"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/pokemonNamesTextViewLabel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
